@@ -5,7 +5,7 @@ function removeClass(id, value) {
   document.getElementById(id).classList.remove(value);
 }
 function getRandomLetter() {
-  return "abcdefghijklmnopqrstuvwxyz/".split("")[parseInt(Math.random() * 25)];
+  return "abcdefghijklmnopqrstuvwxyz/".split("")[parseInt(Math.random() * 26)];
 }
 
 function setScore(id) {

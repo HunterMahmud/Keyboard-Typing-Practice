@@ -18,7 +18,7 @@
       <section
         class="bg-[url('./images/background.png')] h-screen bg-no-repeat bg-center"
       >
-      <!-- play now section starts  -->
+        <!-- play now section starts  -->
         <div
           id="home"
           class="flex flex-col items-center h-screen justify-center gap-8"
@@ -26,6 +26,7 @@
           <h1 class="uppercase font-bold text-7xl text-white">
             Alphabet Clash
           </h1>
+          <p class="text-white font-thin">Developed By Mahmud</p>
           <p class="text-white">
             Unleash Your Keyboard Kung Fu : Press “Enter” to Play
           </p>
@@ -41,7 +42,9 @@
 
         <!-- playground display starts -->
         <div id="playground" class="flex flex-col gap-4 hidden">
-          <div id="display" class="flex flex-col justify-center items-center mt-16">
+          <div id="display"
+            class="flex flex-col justify-center items-center mt-16"
+          >
             <div
               class="flex flex-col items-center artboard artboard-horizontal phone-3 bg-white rounded-xl border-8 border-gray-600"
             >
@@ -95,7 +98,7 @@
               <button class="btn bg-purple-800 border-none text-black">
                 Life
                 <img src="./images/heart.svg" alt="" />
-               <span id="life">5</span>
+                <span id="life">5</span>
               </button>
             </div>
             <div class="score">
@@ -109,10 +112,22 @@
         </div>
         <!-- playground display ends -->
         <!-- display show reslut starts -->
-        <div class="flex items-center justify-center h-screen hidden" id="score">
-          <div class="show-result p-8 bg-[#a7a5a590] max-w-[50%] rounded-xl h-52 flex flex-col justify-center items-center gap-4">
-            <h2 class="text-5xl text-white font-bold">Your Score: <span class="font-normal" id="final-score">1</span></h2>
-            <button onclick="play()" class="btn btn-primary bg-white text-black">Play Again</button>
+        <div
+          class="flex items-center justify-center h-screen hidden"
+          id="score"
+        >
+          <div
+            class="show-result p-8 bg-[#a7a5a590] max-w-[50%] rounded-xl h-52 flex flex-col justify-center items-center gap-4"
+          >
+            <h2 class="text-5xl text-white font-bold">
+              Your Score: <span class="font-normal" id="final-score">1</span>
+            </h2>
+            <button
+              onclick="play()"
+              class="btn btn-primary bg-white text-black"
+            >
+              Play Again
+            </button>
             <p class="text-white">Practice will make you pro InshaAllah.</p>
           </div>
         </div>

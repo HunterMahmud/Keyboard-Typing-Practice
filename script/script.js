@@ -1,3 +1,11 @@
+document.getElementById("home").addEventListener('keyup',enter);
+
+function enter(e){
+    if(e.key === "Enter"){
+        play();
+    }
+}
+
 function play() {
     document.getElementById('current-score').innerText = 0;
     document.getElementById("life").innerText = 5;
@@ -15,7 +23,7 @@ function game() {
 
 function typing(e){
     let alphabet = document.getElementById("target-letter").innerText.toLowerCase();
-    if(e.key === 'Escape'){
+    if(e.key.toLowerCase() === 'Escape'){
         showScore(alphabet);
     }
     if(e.key===alphabet){
